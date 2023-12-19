@@ -2,8 +2,8 @@ FROM openjdk:8-jdk-alpine
 
 volume /app
 
-ADD target/rest-1.0.0.jar rest.jar
+ADD target/rest-docker-1.0.jar restapp.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","/rest.jar"]
+ENTRYPOINT ["java","-jar","/restapp.jar"]
